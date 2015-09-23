@@ -54,5 +54,7 @@ while(not valid):
                player_1 == "lizard" and player_2 == "paper"
             ):
                 print("\n\rPlayer 1 wins")
+                print("\n\rPlayer 2 loses")
             else:
+                print("\n\rPlayer 1 loses")
                 print("\n\rPlayer 2 wins")
