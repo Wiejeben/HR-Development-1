@@ -1,7 +1,12 @@
 import math
 
-number = float(input("Enter a absolute value: "))
+number = input("Enter a absolute value: ")
 
-print("Lazy method: " + str(math.fabs(number)))
+print "Lazy method: ", abs(number)
 
-print("Wrong method: " + str(number).strip('-'))
+print "Wrong method: ", str(number).strip('-')
+
+if(number < 0):
+    number = number * -1
+
+print "With an IF: ", number
