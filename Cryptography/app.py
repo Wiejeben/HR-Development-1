@@ -10,7 +10,7 @@ for char in message:
 
         if char.isupper():
             # Uppercase
-            elif (number < ord("A")):
+            if (number < ord("A")):
                 number = number + 26
 
             elif number > ord("Z"):
