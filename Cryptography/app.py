@@ -10,19 +10,19 @@ for char in message:
 
         if char.isupper():
             # Uppercase
-            if number > ord("Z"):
-                number = number - 26
-
             elif (number < ord("A")):
                 number = number + 26
 
-        else:
-            # Lowercase
-            if number > ord("z"):
+            elif number > ord("Z"):
                 number = number - 26
 
-            elif (number < ord("a")):
+        else:
+            # Lowercase
+            if (number < ord("a")):
                 number = number + 26
+
+            elif number > ord("z"):
+                number = number - 26
 
         char = chr(number)
     result += char
