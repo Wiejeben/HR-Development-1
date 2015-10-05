@@ -3,7 +3,7 @@ strength = 0
 length = len(password)
 
 # Check for length
-if(length >= 5):
+if(length > 6):
     strength += length-6
 
 # Check password per character
@@ -24,13 +24,13 @@ for x in password:
 print "Strength: ", strength
 
 # Get results
+result = "Strong"
+
+# Overwrite if lower
 if strength < 8:
     result = "Weak"
 
 elif strength < 20:
     result = "Medium"
-
-else:
-    result = "Strong"
 
 print "Password strength:", result
