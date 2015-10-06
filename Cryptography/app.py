@@ -1,6 +1,7 @@
-message = input("Enter a message: ")
-offset = int(input("Encryption offset (number): "))
+message = raw_input("Enter a message: ")
+offset = input("Encryption offset (number): ")
 result = ""
+offset %= 26
 
 for char in message:
 
