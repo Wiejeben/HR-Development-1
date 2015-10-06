@@ -1,6 +1,8 @@
-password = input("Please enter a password: ")
-strength = 0
+password = raw_input("Please enter a password: ")
 length = len(password)
+
+# Initial strength
+strength = 0
 
 # Check for length
 if(length > 6):
@@ -26,7 +28,7 @@ print "Strength: ", strength
 # Get results
 result = "Strong"
 
-# Overwrite if lower
+# Overwrite the result if the strength is low
 if strength < 8:
     result = "Weak"
 

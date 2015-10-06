@@ -11,4 +11,4 @@ while not valid:
     else:
         valid = True
         print "\n\rResults:"
-        print "Kelvin: ", kelvin
+        print "Kelvin:", kelvin

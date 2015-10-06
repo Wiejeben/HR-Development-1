@@ -1,7 +1,7 @@
-input = input("Enter a sentence that you would like to reverse: ")
+input = raw_input("Enter a sentence that you would like to reverse: ")
 output = ""
 
-# Reverse string and output it
+# Reverse string
 for word in reversed(input):
     output += word
 
