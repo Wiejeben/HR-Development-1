@@ -8,7 +8,7 @@ for y in range(diameter):
 
     for x in range(diameter):
 
-        # If cursor position is within the circle via formula of Pythagoras
+        # If cursor position is within the radius via formula of Pythagoras
         if sqrt(pow(x - radius, 2) + pow(y - radius, 2)) < radius:
             result += "*"
         else:
