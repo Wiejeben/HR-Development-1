@@ -3,14 +3,14 @@ result = ""
 stars = 1
 whitespace = height
 
-for i in range(height):
+for _ in range(height):
 
     whitespace -= 1
 
-    for x in range(whitespace):
+    for _ in range(whitespace):
         result += " "
 
-    for x in range(stars):
+    for _ in range(stars):
         result += "*"
 
     stars += 2
