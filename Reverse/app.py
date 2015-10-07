@@ -1,8 +1,9 @@
 input = raw_input("Enter a sentence that you would like to reverse: ")
-output = ""
+result = ""
+inputLength = len(input)
 
-# Reverse string
-for word in reversed(input):
-    output += word
+for i in range(inputLength):
+    # Append specified character to results
+    result += input[inputLength - (i + 1)]
 
-print output
+print result
