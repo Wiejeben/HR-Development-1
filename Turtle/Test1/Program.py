@@ -4,8 +4,8 @@
 speed = 5
 turnDegrees = 30
 
-# Define ins
-instructions = "Press these buttons to move the turtle:\n\rW = go forward\n\rS = reverse\n\rA = rotate left\n\rD = rotate right\n\rH = repeat instructions\n\r"
+# Define instructions
+instructions = "Press these buttons to move the turtle:\n\rW = go forward\n\rS = reverse\n\rA = rotate left\n\rD = rotate right\n\rH = change colour to green\n\r"
 print instructions
 
 def Program():
@@ -28,10 +28,10 @@ def Program():
     if key == 100:
         turn(turnDegrees)
 
-    #H repeat instructions
+    #H change colour to green
     if key == 104:
-        print instructions
-
+        change_color_to("green")
+        
 
 run(Program)
 from End import *
