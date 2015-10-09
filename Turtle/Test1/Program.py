@@ -1,6 +1,6 @@
 ﻿from Start import *
 
-# Perferences
+# Preferences
 speed = 5
 turnDegrees = 30
 
@@ -31,7 +31,6 @@ def Program():
     #H change colour to green
     if key == 104:
         change_color_to("green")
-        
 
 run(Program)
 from End import *
