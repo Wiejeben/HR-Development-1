@@ -7,11 +7,12 @@ for char in message:
 
     if char.isalpha():
 
+        # Apply offset
         number = ord(char) + offset
 
         if char.isupper():
             # Uppercase
-            if (number < ord("A")):
+            if number < ord("A"):
                 number = number + 26
 
             elif number > ord("Z"):
@@ -19,7 +20,7 @@ for char in message:
 
         else:
             # Lowercase
-            if (number < ord("a")):
+            if number < ord("a"):
                 number = number + 26
 
             elif number > ord("z"):
