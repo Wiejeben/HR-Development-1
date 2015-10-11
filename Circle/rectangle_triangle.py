@@ -1,12 +1,13 @@
-width = input("How many stars wide would like your triangle to be: ")
-current_width = 1
+width = input("Enter the width of the rectangle triangle: ")
+current_width = 0
 result = ""
 
-for i in range(width):
-
-    for j in range(current_width):
-        result += "*"
-    result += "\n"
+for _ in range(width):
     current_width += 1
+
+    for _ in range(current_width):
+        result += "*"
+
+    result += "\n"
 
 print result
